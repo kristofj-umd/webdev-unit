@@ -42,7 +42,6 @@ $.getJSON("../data/duluth_precincts_WGS84.geojson",function(data){
         // do something to each feature
         // in this case create a popup
         onEachFeature: function (feature, layer) {
-            console.log(feature);
             var thirdPartyPct = calculateThirdPartyPct(feature);
             // show name of precinct and third party percent in popup
             layer.bindPopup(
