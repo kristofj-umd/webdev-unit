@@ -23,12 +23,16 @@
   <script src="https://unpkg.com/mapbox-gl/dist/mapbox-gl.js"></script>
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js"
-    integrity="sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g=="
-    crossorigin=""></script>
+<script
+  src="https://unpkg.com/esri-leaflet@3.0.10/dist/esri-leaflet.js"
+  integrity="sha512-i9mZ/0lnBMdKZjkVQXImtZbWzrhomyyQzXarfT4ki1eD/Bi+rcV4lFyzX52lbRQtqj070JQea4p8QNCMrHzuYg=="
+  crossorigin=""></script>
 
   <!-- Load esri leaflet vector -->
-  <script src="https://unpkg.com/esri-leaflet-vector/dist/esri-leaflet-vector-debug.js"></script>
+  <script
+  src="https://unpkg.com/esri-leaflet-vector@4.0.1/dist/esri-leaflet-vector.js"
+  integrity="sha512-1rJumtWIar3IH4f12WTGted5uGWSc5d8TFH8JVlk3hnCpZCVc2SccJSSNRMUo0AUwzlLeUgNEXvYyivVmhWlZg=="
+  crossorigin=""></script>
 
 
   <style>
@@ -54,7 +58,7 @@
         // add basemap
         L.esri.basemapLayer('Gray').addTo(map);
 
-        L.esri.Vector.layer('6c6dd9a9a61841adb220b86b4813793a').addTo(map);
+        L.esri.Vector.vectorTileLayer('6c6dd9a9a61841adb220b86b4813793a').addTo(map);
     </script>
 </body>
 </html>
